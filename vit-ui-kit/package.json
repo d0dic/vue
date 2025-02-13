@@ -1,0 +1,32 @@
+{
+  "name": "UI-Kit",
+  "author": {
+    "name": "Milos Dodic",
+    "email": "milos_dodic@live.com"
+  },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-kit.umd.cjs",
+  "module": "./dist/ui-kit.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-kit.js",
+      "require": "./dist/ui-kit.umd.cjs"
+    },
+    "./style.css": "./dist/ui-kit.css"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^6.1.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1"
+  }
+}
