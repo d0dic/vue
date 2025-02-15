@@ -20,13 +20,24 @@
     "./style.css": "./dist/ui-kit.css"
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "build:sb": "storybook build",
+    "sb": "storybook dev -p 6006"
   },
   "dependencies": {
     "vite": "^6.1.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1"
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.6",
+    "@storybook/addon-interactions": "^8.5.6",
+    "@storybook/addon-onboarding": "^8.5.6",
+    "@storybook/blocks": "^8.5.6",
+    "@storybook/test": "^8.5.6",
+    "@storybook/vue3": "^8.5.6",
+    "@storybook/vue3-vite": "^8.5.6",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "storybook": "^8.5.6"
   }
 }

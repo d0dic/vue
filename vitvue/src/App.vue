@@ -1,10 +1,38 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+
+import { Header as UiHeader } from 'ui-kit'
+
+export default {
+  name: 'my-app',
+
+  components: { UiHeader },
+
+  data(): { user: null | { name: string } } {
+    return {
+      user: null,
+    };
+  },
+
+  methods: {
+    onLogin() {
+      this.user = { name: 'Jane Doe' };
+    },
+    onLogout() {
+      this.user = null;
+    },
+    onCreateAccount() {
+      this.user = { name: 'Jane Doe' };
+    },
+  },
+};
+</script>
 
 <template>
+
+  <ui-header :user="user" @login="onLogin" @logout="onLogout" @createAccount="onCreateAccount" />
+
   <nav>
-
     <RouterLink class="logo" to="/"> Home</RouterLink>
-
     <RouterLink class="logo" to="/about">About</RouterLink>
 
     <div>

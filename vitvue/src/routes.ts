@@ -1,11 +1,5 @@
-// import WelcomePage from './pages/Welcome.vue'
-import AboutPage from './pages/About.vue'
-
-import { defineAsyncComponent } from 'vue'
-
-const WelcomePage = defineAsyncComponent(() =>
-  import('./pages/Welcome.vue')
-)
+const WelcomePage = () => import('./pages/Welcome.vue')
+const AboutPage = () => import('./pages/About.vue')
 
 const routes = [
   { path: '/', component: WelcomePage },

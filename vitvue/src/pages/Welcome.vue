@@ -9,8 +9,7 @@
 
 <script setup lang="ts">
 
-    import { HelloWorld } from 'ui-kit'
-    // import 'ui-kit/style.css'
+    import  HelloWorld  from '../components/HelloWorld.vue'
 
     defineProps<{ userName?: string }>()
 

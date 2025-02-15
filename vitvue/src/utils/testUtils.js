@@ -1,6 +1,6 @@
 import { Suspense, defineComponent, h } from 'vue'
 
-import { screen, render, waitFor } from '@testing-library/vue'
+import { screen, render, waitFor, fireEvent } from '@testing-library/vue'
 
 // NOTE: Suspense is in experimantal mode
 export function asyncWrapper(
@@ -27,5 +27,6 @@ export {
     screen,
     render,
     asyncWrapper,
-    waitFor
+    waitFor,
+    fireEvent
 }

@@ -6,10 +6,13 @@
             voluptate reprehenderit fugiat quam aut repudiandae dignissimos necessitatibus illum laborum exercitationem
             voluptatem eveniet consequatur iste.
         </p>
+        <Button label="Contribute" primary />
     </div>
 </template>
 
 <script setup lang="ts">
+
+import { Button } from 'ui-kit'
 
 </script>
 

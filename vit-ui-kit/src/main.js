@@ -1,11 +1,15 @@
 
-// TODO: Setup lazy load???
 import { defineAsyncComponent } from 'vue'
 
-const HelloWorld = defineAsyncComponent(() =>
-    import('./components/HelloWorld.vue')
+const Button = defineAsyncComponent(() =>
+    import('./components/Button/Button.vue')
 )
 
-// import HelloWorld from './components/HelloWorld.vue'
+const Header = defineAsyncComponent(() =>
+    import('./components/Header/Header.vue')
+)
 
-export { HelloWorld }
+export {
+    Button,
+    Header
+}
