@@ -21,8 +21,9 @@
   },
   "scripts": {
     "build": "vite build",
+    "postinstall": "vite build",
     "build:sb": "storybook build",
-    "sb": "storybook dev -p 6006"
+    "run:sb": "storybook dev -p 6006"
   },
   "dependencies": {
     "vite": "^6.1.0",
