@@ -23,7 +23,7 @@
     "build": "vite build",
     "postinstall": "vite build",
     "build:sb": "storybook build",
-    "run:sb": "storybook dev -p 6006"
+    "dev": "storybook dev -p 6006"
   },
   "dependencies": {
     "vite": "^6.1.0",
